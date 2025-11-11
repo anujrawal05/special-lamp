@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
+            <span class="eyebrow">✨ Now Available</span>
+            <h1>Decode the Science <br>Behind the Sacred.</h1>
+            <p class="lead">Rediscover Sanatan Dharma not just as a faith, but as a timeless, sophisticated system for holistic well-being in the modern world.</p>
+            
+            <div class="price-display">
+                <span class="price-original">MRP: ₹550</span>
+                <span class="price-new">₹200</span>
+                <span class="price-tag-text">Limited Time Offer</span>
+            </div>
+
+            <div class="hero-btns">
+                <a href="#buy" class="btn btn-primary glow-effect">Get Your Copy</a>
+                <a href="#about" class="btn btn-text">Explore More →</a>
+            </div>
+            <div class="trust-badges">
+                <span>Author: Anuj Rawal</span> | <span>ISBN: 978-81-992925-8-1</span>
+            </div>
+        </div>
+
+        <div class="hero-img" data-aos="zoom-out" data-aos-duration="1500">
+            <img src="{{ url_for('static', filename='img/book-cover-3d.png') }}" alt="Sanatan Book Cover 3D Mockup" class="floating-book">
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+    </div>
+</section>
+
+<section class="taglines-bar" data-aos="fade-up">
+    <div class="container tagline-flex">
+        <div class="tagline-item"><span class="icon">🕉️</span> Ancient Rituals, Modern Validation</div>
+        <div class="tagline-item"><span class="icon">🧬</span> The DNA of Your Traditions</div>
+        <div class="tagline-item"><span class="icon">🧠</span> A Science of Survival</div>
+    </div>
+</section>
+
+<section id="about" class="section-pad">
+    <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Why This Book?</h2>
+        
+        <div class="about-grid">
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <p class="intro-text">We live in an age of questioning. The "what" and "how" of our traditions are no longer enough; the modern mind demands the "why."</p>
+                <p><strong>Sanatan: The Eternal Way of Living</strong> bridges the gap between the rishis' ancient laboratories and today's scientific discoveries. It explores how supposed "rituals" are actually sophisticated psycho-physiological techniques.</p>
+                
+                <ul class="feature-list">
+                    <li data-aos="fade-left" data-aos-delay="300"><span class="li-icon">🔔</span> <strong>Demystifies Rituals:</strong> The acoustics of temple bells & thermodynamics of Havan.</li>
+                    <li data-aos="fade-left" data-aos-delay="400"><span class="li-icon">🥗</span> <strong>Food as Medicine:</strong> Nobel-winning science (Autophagy) behind fasting.</li>
+                    <li data-aos="fade-left" data-aos-delay="500"><span class="li-icon">🧘</span> <strong>Mind Mechanics:</strong> How Yoga literally reshapes your brain (Neuroplasticity).</li>
+                    <li data-aos="fade-left" data-aos-delay="600"><span class="li-icon">🌿</span> <strong>Ecological Wisdom:</strong> 'Sacred' status as an ancient conservation method.</li>
+                </ul>
+            </div>
+            
+            <div class="about-highlight" data-aos="zoom-in-left" data-aos-delay="400">
+                <blockquote>
+                    "I did not write this as a guru, but as a fellow seeker... offering you a new lens through which to see our traditions."
+                    <cite>- Anuj Rawal</cite>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="chapters" class="section-pad bg-pattern">
+    <div class="container">
+        <h2 class="section-title text-center light-title" data-aos="fade-down">Inside the Pages</h2>
+        
+        <div class="chapter-grid">
+            <div class="chapter-card" data-aos="fade-up" data-aos-delay="100">
+                <span class="chapter-num">Ch. 02</span>
+                <h3>The Science of Daily Puja</h3>
+                <p>Energy, sound, and intention. Daily acts as "mental hygiene" for modern stressful life.</p>
+            </div>
+            <div class="chapter-card" data-aos="fade-up" data-aos-delay="200">
+                <span class="chapter-num">Ch. 03</span>
+                <h3>Food, Fasting & Rhythm</h3>
+                <p>Moving beyond calorie counting to understanding food as information for your cells.</p>
+            </div>
+            <div class="chapter-card" data-aos="fade-up" data-aos-delay="300">
+                <span class="chapter-num">Ch. 07</span>
+                <h3>Dharma in Action</h3>
+                <p>The logic of right living. Karma not as fate, but as the science of habit and consequence.</p>
+            </div>
+            <div class="chapter-card" data-aos="fade-up" data-aos-delay="400">
+                <span class="chapter-num">Ch. 09</span>
+                <h3>Ancient Wisdom, Modern Science</h3>
+                <p>Uncovering the hidden logic behind everyday traditions, from Namaste to floor-seating.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="author" class="section-pad">
+    <div class="container author-container-v2">
+        <div class="author-text-side" data-aos="fade-right">
+            <span class="eyebrow" style="color: var(--saffron);">The Bridge Between Worlds</span>
+            <h2>Meet Anuj Rawal</h2>
+            <p class="lead">A science student by training. A spiritual seeker by soul.</p>
+            <p>Anuj always navigated two distinct worlds: the deep spiritual heritage of his family and the rigorous logical framework of modern science. Unwilling to accept traditions on blind faith, he embarked on a lifelong quest to find the "why" behind the sacred.</p>
+            <p><em>Sanatan</em> is the result of that quest—a documentation of how ancient rishis were, in fact, the world's first master scientists.</p>
+            
+            <div class="author-signature" data-aos="fade-up" data-aos-delay="300">
+                <p>"My goal is not to preach, but to explore. Join me as we connect the dots between ancient wisdom and modern laboratories."</p>
+            </div>
+        </div>
+        
+        <div class="author-img-side" data-aos="fade-left" data-aos-delay="200">
+             <div class="img-frame">
+                <img src="{{ url_for('static', filename='img/author.jpg') }}" alt="Anuj Rawal" class="author-photo-v2">
+             </div>
+        </div>
+    </div>
+</section>
+
+<section id="buy" class="section-pad bg-dark-cosmic">
+    <div class="container">
+        <div class="final-cta-stack">
+            
+            <div class="buy-box text-center" data-aos="fade-up">
+                <h2 style="color: white;">Start Your Journey</h2>
+                <p class="lead-sm text-light-muted">Reclaim your roots with reason.</p>
+                
+                <div class="price-display-large">
+                    <span class="price-original-large">₹550</span>
+                    <span class="price-new-large">₹200</span>
+                </div>
+
+                <div class="buy-buttons-row">
+                    <a href="https://www.amazon.in/dp/B0G1M3J11M" target="_blank" class="retailer-btn amazon glow-effect">Buy on Amazon ↗</a>
+                    <a href="https://www.flipkart.com/product/p/itme?pid=9788199292581" target="_blank" class="retailer-btn flipkart">Buy on Flipkart ↗</a>
+                </div>
+            </div>
+
+            <div class="cosmic-divider" data-aos="zoom-in"></div>
+
+            <div id="contact" class="contact-box-centered" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-center">
+                    <h3>Connect with Anuj</h3>
+                    <p>For collaborations, questions, or to share your journey.</p>
+                </div>
+                
+                <div class="contact-links-list">
+                    <a href="mailto:rawalanuj50@gmail.com?subject=Reader Inquiry: Sanatan Book" class="contact-link">
+                        <span class="contact-icon">✉️</span> rawalanuj50@gmail.com
+                    </a>
+                    <a href="https://wa.me/918450895868" target="_blank" class="contact-link">
+                        <span class="contact-icon">💬</span> WhatsApp (+91 8450895868)
+                    </a>
+                    <a href="https://www.instagram.com/anujrawal.ar/" target="_blank" class="contact-link">
+                        <span class="contact-icon">📸</span> Instagram (@anujrawal.ar)
+                    </a>
+                    <a href="https://www.linkedin.com/in/anujrawal-ar/" target="_blank" class="contact-link">
+                        <span class="contact-icon">💼</span> LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+            </div>
+    </div>
+</section>
+
+{% endblock %}

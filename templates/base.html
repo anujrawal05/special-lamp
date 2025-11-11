@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>{% block title %}Sanatan: The Eternal Way of Living | Book by Anuj Rawal{% endblock %}</title>
+    <meta name="description" content="Discover the science behind sacred traditions. 'Sanatan: The Eternal Way of Living' by Anuj Rawal bridges ancient Hindu wisdom with modern scientific validation.">
+    <meta name="keywords" content="Sanatan Dharma book, Anuj Rawal, Science of rituals, Hindu philosophy, Vedic science, holistic living">
+    <meta name="author" content="Anuj Rawal">
+
+    <meta property="og:title" content="Sanatan: The Eternal Way of Living">
+    <meta property="og:description" content="Rediscover Sanatan Dharma not just as a faith, but as a timeless, sophisticated system for holistic well-being.">
+    <meta property="og:image" content="{{ url_for('static', filename='img/book-cover-3d.png', _external=True) }}">
+    <meta property="og:type" content="book">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "Sanatan: The Eternal Way of Living",
+      "author": { "@type": "Person", "name": "Anuj Rawal" },
+      "isbn": "978-81-992925-8-1",
+      "offers": { "@type": "Offer", "price": "200", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="/" class="logo">Sanatan<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About the Book</a></li>
+                <li><a href="#chapters">Inside</a></li>
+                <li><a href="#author">Author</a></li>
+                <li><a href="#buy" class="nav-cta">Buy Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="flash-container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container footer-flex">
+            <div class="footer-about">
+                <h3>Sanatan: The Eternal Way of Living</h3>
+                <p>Bridging ancient wisdom and modern science for a balanced life.</p>
+                <p>© {{ now_year }} Anuj Rawal. Published by Integrity Education India.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <a href="https://instagram.com/anujrawal.ar" target="_blank">Instagram</a>
+                <a href="mailto:rawalanuj50@gmail.com">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize animations
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-quart',
+            once: false,
+            mirror: true,
+            offset: 50
+        });
+
+        // Hide flash messages after 5 seconds
+        setTimeout(function() {
+            const flashes = document.querySelectorAll('.flash-message');
+            flashes.forEach(flash => flash.style.opacity = '0');
+            setTimeout(() => flashes.forEach(flash => flash.style.display = 'none'), 500);
+        }, 5000);
+    </script>
+</body>
+</html>
